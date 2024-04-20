@@ -8,10 +8,10 @@
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
-
 
     <div class="container">
         <ul class="nav">
@@ -24,42 +24,96 @@
             <li class="nav-item">
             <a class="nav-link" href="project.html">Project</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-            </li>
+   
         </ul>
-        </div>
+     </div>
     
-    <div class = "list">
-    <ul>
-        <li>2017 - 2021 cchs</li>
-        <li>2021 - 2024 usyd</li>
-        <li>2023 July - December nus exchange</li>
-    </ul>
-    </div>
+
+    <div class = "wrapper">
+        <div id="accordion">
+          <div class="card bg-transparent text-white">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  University of Sydney  <br>  2021 - 2024 / Sydney, Australia 🇦🇺
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                Bachelor of Science, major in Data Science, minor in Software Development. 
+              </div>
+            </div>
+          </div>
+          <div class="card bg-transparent text-white">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                National University of Singapore <br> 2023 / Singapore 🇸🇬
+            </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                I started a semester exchange at the end of 2023 and spend a long and humid summer at NUS. I had an oppurnity to make friends with people around world at my dorm Prince Goerge Residents. 
+                
+              </div>
+            </div>
+          </div>
+          <div class="card bg-transparent text-white">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Camden Catholic High School <br> 2017 - 2021 / New Jersey, United States 🇺🇸
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                I went to U.S. for high school by myself at 14 years old and lived with a local family at a small town in New Jersey. I attended a traditional religion school and started a life very different from my past experience. 
+                I have more oppurtunies to explore my interest, and I took the classes such as spanish, photography and photoshop, and film studies. I participated in Model UN club and joined several competitions in south jersy region. 
+                I was also a member of National Honor Society and vice president of Ping Pong (aka having doritto after school)Club. 
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
 
 </body>
 
 
 <style>
 
-    .container{
-        margin: 20px;
-    }
+.container{
+    margin: 20px;
+}
 
-    .list{
-        margin:10%;
-    }
-    
-    .list{
-        color:white;
-    }    
-    
-    
-    body{
-        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url(https://yuxuanzh04.files.wordpress.com/2020/01/img_3040.jpg?w=1204);
-    }
-    
-    
-    </style> 
+
+.nav-link{
+color:white;
+font-size: large;
+}
+
+.nav-link:hover{
+color:#f9e2ba;
+}
+
+.nav-link:active{
+    color:#f9e2ba;
+}
+
+.wrapper{
+  margin:10%;
+}
+
+.card-link{
+color:#f9e2ba;
+}
+
+.card-link:hover{
+color:#d67800; 
+font-size:large;
+}
+
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+  url(https://yuxuanzh04.files.wordpress.com/2020/01/img_3040.jpg?w=1204);
+  background-size: cover;
+
+
+}
+</style>

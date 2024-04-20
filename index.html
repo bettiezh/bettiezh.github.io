@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>betty</title>
   <meta charset="utf-8">
@@ -8,13 +8,14 @@
   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
-
+<section class = "landing_page"> 
 <div class="container">
-    <ul class="nav">
+    <ul class="nav"> 
         <li class="nav-item">
         <a class="nav-link" href="#" >About</a>
         </li>
@@ -24,22 +25,40 @@
         <li class="nav-item">
         <a class="nav-link" href="project.html">Project</a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <li class = "nav-item">
+        <a class = "nav-link" href = "Gallery.html">Gallery</a>
         </li>
     </ul>
 
     </div>
 
-<div class = "bio">
-    <p>Welcome</p>   
-</div>
+<div class = "content">
+    <h2>Hi, </h2>   
+    <p>I am a data science student at the University of Sydney. This is a website about ME. </p>
+
+    <br>
+
+    <a href="mailto:zhengyuxuan0414@gmail.com" class="btn btn-outline-light" data-toggle="collapse">Contact Me</a>
+    <div id="demo" class="collapse"></div>
+
+    <br><br>
+
+    <a href="#demo" class="btn btn-outline-light" data-toggle="collapse">Fun Fact</a>
+    <div id="demo" class="collapse">
+        <br>
+        The background picture of this website were taken by myself when I travelled to Chongqing City at 16 years old. I was trying to create a website using wordpress to store my photography picture back in high school. 
+        In memorial of my very first personal website, I use the photography back then as my background. In case you are interested, the link is here. <a href="https://yuxuanzh04.wordpress.com/">Check</a> 
+        <br>
+    </div>
 
 
+
+</section>
 
 </body>
 
 </html>
+
 
 <style>
 
@@ -47,24 +66,99 @@
     margin: 20px;
 }
 
-.bio{
-        margin:10%;
-    }
     
+body{
+background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+url(https://yuxuanzh04.files.wordpress.com/2020/01/wechatimg654.jpeg?w=968);
+text-align:center;
+border-color: #d7d3d3;
+border-radius: 0px;
+background-size: cover;
+}
 
-p{
+.nav-link{
+color:white;
+font-size: large;
+}
+
+.nav-link:hover{
+color:#a6e0f9;
+}
+
+.nav-link:active{
+    color:#a6e0f9;
+}
+
+
+.content{
+    margin:10%;
     color:white;
 }    
 
 
-body{
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url(https://yuxuanzh04.files.wordpress.com/2020/01/wechatimg654.jpeg?w=968);
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    color: white;
+    display: inline-block;
+    cursor:pointer;
+    border-style: solid;
+    border-radius: 10px;
+    border-color:white;
+    padding:8px;
+    margin:10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 
 
-</style> 
-
-
+</style>
 
 
